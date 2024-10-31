@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+main {
+  height: 100svh;
+  background-color: #18171f;
+  color: #fff;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 12rem;
+  font-weight: 400;
+  height: 150px;
+}
+
+.minutes, .hours {
+  background-color: #3b3a3d;
+  color: #fff;
+  width: 90px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+
+.minutes:focus, .hours:focus {
+  border: 1px solid #545257;
+}
+
+
+.invalid {
+  border: 2px solid #f71c1c;
+}
+
+.set-alarm {
+  background-color: #009d5e;
+  color: #fff;
+  font-size: 2rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.25s ease-in-out;
+}
+
+.set-alarm:hover {
+  background-color: #09af6d;
+  scale: 1.01;
+}
+
+.alarm-time {
+  font-size: 2rem;
+}
